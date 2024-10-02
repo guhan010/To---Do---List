@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-image: url(images/pexels-felixmittermeier-956999.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  height: auto;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  color: whitesmoke;
+  font-family: monospace;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.inpcontainer {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.inp {
+  width: 100%;
+  max-width: 70%;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.btn {
+  width: 100%;
+  max-width: 25%;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: rgba(214, 192, 25, 0.7);
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: darkgoldenrod;
+}
+
+.listContainer {
+  width: 100%;
+  max-width: 400px;
+  background-color: lavenderblush;
+  margin: 20px auto 40px auto;
+  border-radius: 20px;
+}
+.listContainer li {
+  list-style-type: none;
+  line-height: 40px;
+  position: relative;
+}
+ul li span {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li span:hover {
+  color: lightgrey;
+  background-color: darkmagenta;
+}
+
+ul li::before {
+  content: " ";
+  background-image: url(images/unchecked.svg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 15px;
+  top: 10px;
+}
+ul li.checked {
+  text-decoration-line: line-through;
+}
+ul li.checked::before {
+  content: " ";
+  background-image: url(images/checked-tick-svgrepo-com.svg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 12px;
+  margin-left: 17px;
+  top: 7px;
+}
